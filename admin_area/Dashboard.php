@@ -29,41 +29,7 @@
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
-    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-        <a class="navbar-brand brand-logo" href="#">
-          <img src="../assets/images/logo.svg" alt="logo" /> </a>
-        <a class="navbar-brand brand-logo-mini" href="index.html">
-          <img src="../assets/images/logo-mini.svg" alt="logo" /> </a>
-      </div>
-      <div class="navbar-menu-wrapper d-flex align-items-center">
-        <form class="ml-auto search-form d-none d-md-block" action="#">
-          <div class="form-group">
-            <input type="search" class="form-control" placeholder="Search Here">
-          </div>
-        </form>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
-            <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <img class="img-xs rounded-circle" src="../assets/images/medi.jpg" alt="Profile image"> </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-              <div class="dropdown-header text-center">
-                <img class="img-md rounded-circle" src="../assets/images/medi.jpg" alt="Profile image">
-                <p class="mb-1 mt-3 font-weight-semibold">Medicare</p>
-                <p class="font-weight-light text-muted mb-0">mcare@gmail.com</p>
-              </div>
-              <a class="dropdown-item">My Profile<i class="dropdown-item-icon ti-dashboard"></i></a>
-              <a class="dropdown-item">admin area<i class="dropdown-item-icon ti-power-off"></i></a>
-              <a class="dropdown-item">Logout<i class="dropdown-item-icon ti-power-off"></i></a>
-            </div>
-          </li>
-        </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
-          data-toggle="offcanvas">
-          <span class="mdi mdi-menu"></span>
-        </button>
-      </div>
-    </nav>
+    <?php include '../includes/_navbar.php' ?>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial -->
@@ -82,14 +48,11 @@
                   <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th> profile </th>
-                        <th> Nama lengkap </th>
-                        <th> Pekerjaan </th>
-                        <th> Start work </th>
-                        <th> Deadline </th>
-                        <th style="width: 200px;"> progress </th>
-                        <th> Status</th>
-                        <th> user History </th>
+                        <th style="width: 100px;"> profile </th>
+                        <th style="width: 200px;"> Nama lengkap </th>
+                        <th style="width: 400px;"> progress </th>
+                        <th style="width: 50px;"> Status</th>
+                        <th style="width: 50px;"> Pekerjaan Details </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -97,9 +60,6 @@
                         <td class="py-1">
                           <img src="../assets/images/faces-clipart/pic-1.png" alt="image"> </td>
                         <td> Karyawan A </td>
-                        <td> example work A </td>
-                        <td> Des 12, 2019 </td>
-                        <td> Jan 15, 2020 </td>
                         <td>
                           <div class="progress">
                             <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"
@@ -110,17 +70,15 @@
                           <label class="badge badge-warning">inprogres</label>
                         </td>
                         <td>
-                          <button type="button" class="btn btn-primary btn-sm btn-fw">
-                            <i class="fa fa-eye"></i>view</button>
+                          <a href="view_datail_karyawan.php" class="btn btn-primary btn-sm btn-fw">
+                            <i class="fa fa-eye"></i>view</a>
                         </td>
                       </tr>
                       <tr>
                         <td class="py-1">
                           <img src="../assets/images/faces-clipart/pic-2.png" alt="image"> </td>
                         <td> Karyawan B </td>
-                        <td> example work B </td>
-                        <td> Des 12, 2019 </td>
-                        <td> Jan 15, 2020 </td>
+                       
                         <td>
                           <div class="progress">
                             <div class="progress-bar bg-warning" role="progressbar" style="width: 60%"
@@ -139,9 +97,7 @@
                         <td class="py-1">
                           <img src="../assets/images/faces-clipart/pic-3.png" alt="image"> </td>
                         <td> Karyawan C </td>
-                        <td> example work C </td>
-                        <td> Des 12, 2019 </td>
-                        <td> Jan 15, 2020 </td>
+                        
                         <td>
                           <div class="progress">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 10%"
@@ -160,9 +116,6 @@
                         <td class="py-1">
                           <img src="../assets/images/faces-clipart/pic-4.png" alt="image"> </td>
                         <td> Karyawan D </td>
-                        <td> example work D </td>
-                        <td> Des 12, 2019 </td>
-                        <td> Jan 15, 2020 </td>
                         <td>
                           <div class="progress">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
@@ -187,12 +140,7 @@
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
-        <footer class="footer">
-          <div class="container-fluid clearfix">
-            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 All rights reserved.</span>
-
-          </div>
-        </footer>
+        <?php include '../includes/_footer.php' ?>
         <!-- partial -->
       </div>
       <!-- main-panel ends -->

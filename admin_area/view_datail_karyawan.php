@@ -36,101 +36,111 @@
       <div class="container-fluid">
         <div class="content-wrapper">
           <!-- Page Title Header Starts-->
-         <?php include '../includes/_menu.php' ?>
+          <?php include '../includes/_menu.php' ?>
           <!-- Page Title Header Ends-->
           <div class="row">
-            <div class="col-lg-10 grid-margin stretch-card mx-auto">
+            <div class="col-lg-3 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Progress Karyawan</h4>
-                  <p class="card-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, incidunt.
-                  </p>
+                  <h4 class="card-title text-center">Profile</h4>
+                  <div class=" text-center">
+
+                    <img src="../assets/images/medi.jpg" width="150" height="150" class="rounded-circle" alt="" srcset="">
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-md-4">
+                      <span>Nama</span>
+                    </div>
+                    <div class="col-md-8">
+                      <span> : Karyawan A</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span>address</span>
+                    </div>
+                    <div class="col-md-8">
+                      <span> : Jalan raya Tanjung Bayan</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span>Phone Number</span>
+                    </div>
+                    <div class="col-md-8">
+                      <span> : +6287-xxxx-xxxx</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span>Jabatan </span>
+                    </div>
+                    <div class="col-md-8">
+                      <span> : </span><label class="badge badge-info">Direktor</label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Progress Pekerjaan</h4>
+                  <p class="card-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, eos?</p>
                   <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th> profile </th>
-                        <th> Nama lengkap </th>
-                        <th> Pekerjaan </th>
-                        <th> Start work </th>
-                        <th> Deadline </th>
-                        <th style="width: 200px;"> progress </th>
-                        <th> user History </th>
+                        <th style="width: 100px;"> Nama Kerjaan </th>
+                        <th style="width: 100px;"> Start Work </th>
+                        <th style="width: 100px;"> Deadline </th>
+                        <th style="width: 400px;"> Progress </th>
+                        <th style="width: 100px;"> Status</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="py-1">
-                          <img src="../assets/images/faces-clipart/pic-1.png" alt="image"> </td>
-                        <td> Karyawan A </td>
-                        <td> example work A </td>
-                        <td> Des 12, 2019 </td>
-                        <td> Jan 15, 2020 </td>
+                        <td> Pekerjaan A </td>
+                        <td> Des, 12 2019</td>
+                        <td> Jan, 01 2020</td>
                         <td>
                           <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"
-                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </td>
                         <td>
-                          <button type="button" class="btn btn-primary btn-sm btn-fw">
-                            <i class="fa fa-eye"></i>view</button>
+                          <label class="badge badge-warning">inprogres</label>
                         </td>
+                        
                       </tr>
                       <tr>
-                        <td class="py-1">
-                          <img src="../assets/images/faces-clipart/pic-2.png" alt="image"> </td>
-                        <td> Karyawan B </td>
-                        <td> example work B </td>
-                        <td> Des 12, 2019 </td>
-                        <td> Jan 15, 2020 </td>
+                        <td> Pekerjaan B </td>
+                        <td> Des, 12 2019</td>
+                        <td> Jan, 01 2020</td>
                         <td>
                           <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 60%"
-                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </td>
                         <td>
-                          <button type="button" class="btn btn-primary btn-sm btn-fw">
-                            <i class="fa fa-eye"></i>view</button>
+                          <label class="badge badge-danger">pending</label>
                         </td>
+                        
                       </tr>
                       <tr>
-                        <td class="py-1">
-                          <img src="../assets/images/faces-clipart/pic-3.png" alt="image"> </td>
-                        <td> Karyawan C </td>
-                        <td> example work C </td>
-                        <td> Des 12, 2019 </td>
-                        <td> Jan 15, 2020 </td>
+                        <td> Pekerjaan A </td>
+                        <td> Des, 12 2019</td>
+                        <td> Jan, 01 2020</td>
                         <td>
                           <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 10%"
-                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </td>
                         <td>
-                          <button type="button" class="btn btn-primary btn-sm btn-fw">
-                            <i class="fa fa-eye"></i>view</button>
+                          <label class="badge badge-success">completed</label>
                         </td>
+                        
                       </tr>
-                      <tr>
-                        <td class="py-1">
-                          <img src="../assets/images/faces-clipart/pic-4.png" alt="image"> </td>
-                        <td> Karyawan D </td>
-                        <td> example work D </td>
-                        <td> Des 12, 2019 </td>
-                        <td> Jan 15, 2020 </td>
-                        <td>
-                          <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
-                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-primary btn-sm btn-fw">
-                            <i class="fa fa-eye"></i>view</button>
-                        </td>
-                      </tr>
-
                     </tbody>
                   </table>
                 </div>

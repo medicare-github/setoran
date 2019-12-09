@@ -29,9 +29,7 @@
                     <div class="col-lg-4 mx-auto">
                         <div class="auto-form-wrapper">
                             <form action="admin_area/Dashboard.php">
-                                <div class="text-block text-center my-3">
-                                    <h3>Login As Admin</h3>
-                                </div>
+                               
                                 <div class="form-group">
                                     <label class="label">Username</label>
                                     <div class="input-group">
@@ -65,9 +63,9 @@
                                     <a href="#" class="text-small forgot-password text-black">Forgot Password</a>
                                 </div>
                                 <div class="form-group">
-                                    <a href="index2.php" class="btn btn-info submit-btn btn-block">Login as Karyawan</a>
+                                    <button class="btn btn-block g-login">
+                                        <img class="mr-3" src="assets/images/file-icons/icon-google.svg" alt="">Log in with Google</button>
                                 </div>
-
                             </form>
                         </div>
                         <ul class="auth-footer">
