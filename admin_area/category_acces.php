@@ -40,7 +40,7 @@
                     <?php include '../includes/_menu.php' ?>
                     <!-- Page Title Header Ends-->
                     <div class="row">
-                        <div class="col-md-6 d-flex align-items-stretch grid-margin mx-auto">
+                        <div class="col-md-9 d-flex align-items-stretch grid-margin mx-auto">
                             <div class="row flex-grow">
                                 <div class="col-12 grid-margin">
                                     <div class="card">
